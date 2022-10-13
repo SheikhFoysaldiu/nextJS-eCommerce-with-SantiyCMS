@@ -7,6 +7,11 @@ const nextConfig = {
 		// your project has ESLint errors.
 		ignoreDuringBuilds: true,
 	},
+	env: {
+		NEXT_PUBLIC_SANITY_TOKEN: process.env.NEXT_PUBLIC_SANITY_TOKEN,
+		NEXT_PUBLIC_STRIPE_PUBLISHABLE: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE,
+		STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
+	},
 };
 
 module.exports = nextConfig;

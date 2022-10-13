@@ -5,9 +5,11 @@ import {
 	AiFillStar,
 	AiOutlineStar,
 } from "react-icons/ai";
-
+import dynamic from "next/dynamic";
 import { client, urlFor } from "../../lib/client.sanity";
+
 import { Product } from "../../components";
+
 import { useStateContext } from "../../context/StateContext.context";
 import { Toaster } from "react-hot-toast";
 const ProductDetails = ({ product, products }) => {
